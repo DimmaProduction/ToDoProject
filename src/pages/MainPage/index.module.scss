@@ -1,0 +1,85 @@
+.container {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  position: absolute;
+  color: black;
+
+  top: 18vh;
+  left: 18vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 56px;
+  font-weight: 300;
+
+  text-transform: uppercase;
+}
+
+.header {
+  &__wrapper {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: black;
+    padding: 0 204px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    list-style: none;
+  }
+}
+
+.scrollDownIcon {
+  height: 110px;
+
+  position: absolute;
+  top: 84vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.scrollDownIcon {
+  // rest of the styles from above
+  animation: jumpInfinite 1.5s infinite;
+}

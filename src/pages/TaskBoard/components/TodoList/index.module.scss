@@ -1,0 +1,21 @@
+.container {
+  width: 100vw;
+  min-height: 70vh;
+
+  max-width: 1024px;
+}
+
+.content {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.separator {
+  width: 90%;
+  border-bottom: 2px solid gray;
+
+  margin: 32px auto;
+}
